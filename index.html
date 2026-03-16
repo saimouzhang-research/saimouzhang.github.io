@@ -246,14 +246,24 @@
 
     .trajectory-item {
       display: grid;
-      grid-template-columns: 54px 1fr;
-      gap: 14px;
+      grid-template-columns: 128px 1fr;
+      gap: 16px;
       align-items: start;
     }
 
+    .uni-photo {
+      width: 128px;
+      height: 92px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #eef3ff, #f7f8fb);
+      border: 1px solid var(--line);
+      display: block;
+    }
+
     .uni-badge {
-      width: 54px;
-      height: 54px;
+      width: 128px;
+      height: 92px;
       border-radius: 16px;
       background: linear-gradient(135deg, #eef3ff, #f7f8fb);
       border: 1px solid var(--line);
@@ -370,7 +380,7 @@
   <main id="top" class="container">
     <section class="hero">
       <aside class="profile-card">
-        <img src="Saimou Zhang.JPG" alt="Saimou Zhang" class="profile-photo">
+        <img src="photo.jpg" alt="Saimou Zhang" class="profile-photo">
 
         <div class="sidebar-row">
           <div class="sidebar-key">Email</div>
@@ -448,38 +458,38 @@
           <h2>Trajectory</h2>
           <div class="trajectory-list">
             <div class="trajectory-item">
-              <div class="uni-badge">UIUC</div>
+              <img src="uiuc.jpg" alt="University of Illinois Urbana-Champaign campus" class="uni-photo">
               <div>
                 <h3>University of Illinois Urbana-Champaign</h3>
                 <div class="meta">Ph.D., Linguistics (Computational Linguistics track) · 2025–2030 expected</div>
               </div>
             </div>
             <div class="trajectory-item">
-              <div class="uni-badge">UC</div>
+              <img src="uchicago.jpg" alt="University of Chicago campus" class="uni-photo">
               <div>
                 <h3>University of Chicago</h3>
                 <div class="meta">Visiting Student, Computer Science · 2026 · Host: Mina Lee</div>
               </div>
             </div>
             <div class="trajectory-item">
-              <div class="uni-badge">UD</div>
+              <img src="udel.jpg" alt="University of Delaware campus" class="uni-photo">
               <div>
                 <h3>University of Delaware</h3>
-                <div class="meta">Ph.D. studies, Educational Statistics &amp; Research Methods · 2022–2023</div>
+                <div class="meta">Ph.D. studies, Educational Statistics &amp; Research Methods </div>
               </div>
             </div>
             <div class="trajectory-item">
-              <div class="uni-badge">SFU</div>
+              <img src="sfu.jpg" alt="Simon Fraser University campus" class="uni-photo">
               <div>
                 <h3>Simon Fraser University</h3>
-                <div class="meta">B.Sc., Statistics major and Linguistics minor · 2018–2024</div>
+                <div class="meta">B.Sc., Statistics major and Linguistics minor </div>
               </div>
             </div>
             <div class="trajectory-item">
-              <div class="uni-badge">UBC</div>
+              <img src="ubc.jpg" alt="University of British Columbia campus" class="uni-photo">
               <div>
                 <h3>University of British Columbia</h3>
-                <div class="meta">M.Ed., Education (Applied Linguistics) · 2015–2018</div>
+                <div class="meta">M.Ed., Education (Applied Linguistics) </div>
               </div>
             </div>
           </div>
