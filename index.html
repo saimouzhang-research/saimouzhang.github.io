@@ -390,6 +390,51 @@
       padding-top: 10px;
     }
 
+      .mentor-block {
+        margin-top: 26px;
+      }
+    
+      .mentor-title {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin-bottom: 14px;
+      }
+    
+      .mentor-list {
+        display: grid;
+        gap: 10px;
+      }
+    
+      .mentor-item {
+        padding: 10px 14px;
+        border-left: 3px solid transparent;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+      }
+    
+      .mentor-item:hover {
+        background: var(--soft);
+        border-left: 3px solid var(--accent);
+      }
+    
+      .mentor-name {
+        font-size: 0.96rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+    
+      .mentor-name span {
+        font-weight: 400;
+        color: var(--muted);
+        margin-left: 6px;
+      }
+    
+      .mentor-desc {
+        font-size: 0.88rem;
+        color: #4b5563;
+        margin-top: 2px;
+      }
+
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -489,32 +534,37 @@
           interests, rooted in linguistic theories but augmented by LLM opportunities. 
 
         <div class="mentor-block">
-            <div class="mentor-title">
-              People whom I have studied with and have shaped my understanding of discourse coherence
+          <div class="mentor-title">
+             People whom I have studied with and have shaped my understanding of discourse coherence
+          </div>
+        
+          <div class="mentor-list">
+            <div class="mentor-item">
+              <div class="mentor-name">Maite Taboada <span>(SFU)</span></div>
+              <div class="mentor-desc">Rhetorical Structure Theory (RST) and discourse coherence annotation</div>
             </div>
-          
-            <div class="mentor-list">
-              <div class="mentor-item">
-                Prof. Maite Taboada (SFU) — Rhetorical Structure Theory (RST) and discourse coherence annotation
-              </div>
-          
-              <div class="mentor-item">
-                Prof. Nancy Hedberg (SFU) — Cognitive status and referring expressions across languages
-              </div>
-          
-              <div class="mentor-item">
-                Prof. Daniel Altshuler (Oxford) — Segmented Discourse Representation Theory (SDRT) in literature
-              </div>
-          
-              <div class="mentor-item">
-                Prof. Aleksandre Maskharashvili (UIUC) — LLM-based discourse coherence research
-              </div>
-          
-              <div class="mentor-item">
-                (While I declined many offer opportunities) Prof. Hannah Rohde (Edinburgh) — broader perspectives on coherence and discourse processing
-              </div>
+        
+            <div class="mentor-item">
+              <div class="mentor-name">Nancy Hedberg <span>(SFU)</span></div>
+              <div class="mentor-desc">Cognitive status and referring expressions across languages</div>
+            </div>
+        
+            <div class="mentor-item">
+              <div class="mentor-name">Daniel Altshuler <span>(Oxford)</span></div>
+              <div class="mentor-desc">Segmented Discourse Representation Theory (SDRT) in literature</div>
+            </div>
+        
+            <div class="mentor-item">
+              <div class="mentor-name">Aleksandre Maskharashvili <span>(UIUC)</span></div>
+              <div class="mentor-desc">LLM-based discourse coherence research</div>
+            </div>
+        
+            <div class="mentor-item">
+              <div class="mentor-name">Hannah Rohde <span>(Edinburgh)</span></div>
+              <div class="mentor-desc">Broader perspectives on coherence and discourse processing</div>
             </div>
           </div>
+        </div>
         </p>
         
         <div class="chips">
@@ -599,7 +649,7 @@
                 <img src="sig-writing-school.jpg" alt="SIG Writing Research School logo" class="training-logo" />
                 <div>
                   <h3>SIG Writing Research School</h3>
-                  <div class="meta">Zürich, Switzerland · 2026 · </div>
+                  <div class="meta">Zürich, Switzerland · 2026 </div>
                   <p>
                     Keystroke logging with Inputlog, analysis and visualization of
                     keystroke data, fluency measurement, handwriting analysis with CSWin,
