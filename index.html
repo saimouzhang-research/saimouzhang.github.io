@@ -17,7 +17,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -142,24 +141,27 @@
 
     h1 {
       margin: 0;
-      font-size: 48px;
-      letter-spacing: -0.04em;
-      line-height: 1.1;
+      font-size: 3.8rem;
+      letter-spacing: -0.05em;
+      line-height: 1.04;
       font-weight: 800;
     }
 
     .subtitle {
-      margin-top: 10px;
-      font-size: 1.12rem;
-      color: #2e3744;
+      margin-top: 12px;
+      font-size: 1.04rem;
+      color: #3f4a5a;
       font-weight: 500;
+      line-height: 1.6;
     }
 
     .intro {
       margin-top: 18px;
-      max-width: 760px;
-      font-size: 1.04rem;
-      color: #344050;
+      max-width: 920px;
+      font-size: 0.96rem;
+      line-height: 1.95;
+      color: #465366;
+      letter-spacing: 0.003em;
     }
 
     .chips {
@@ -241,44 +243,44 @@
       margin-top: 3px;
     }
 
-.additional-training {
-  margin-top: 24px;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
-}
+    .additional-training {
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
 
-.additional-training-title {
-  margin: 0 0 14px;
-  font-size: 1.08rem;
-  letter-spacing: -0.01em;
-}
+    .additional-training-title {
+      margin: 0 0 14px;
+      font-size: 1.08rem;
+      letter-spacing: -0.01em;
+    }
 
-.training-list {
-  display: grid;
-  gap: 14px;
-}
+    .training-list {
+      display: grid;
+      gap: 14px;
+    }
 
-.training-item {
-  display: grid;
-  grid-template-columns: 95px 1fr;
-  gap: 18px;
-  align-items: start;
-}
+    .training-item {
+      display: grid;
+      grid-template-columns: 95px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
 
-.training-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  object-fit: contain;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  display: block;
-  padding: 8px;
-}
+    .training-logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      object-fit: contain;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      display: block;
+      padding: 8px;
+    }
 
-.training-item p:last-child {
-  margin-bottom: 0;
-}
+    .training-item p:last-child {
+      margin-bottom: 0;
+    }
 
     .news-item {
       display: grid;
@@ -390,50 +392,95 @@
       padding-top: 10px;
     }
 
-      .mentor-block {
-        margin-top: 26px;
-      }
-    
-      .mentor-title {
-        font-size: 0.95rem;
-        color: var(--muted);
-        margin-bottom: 14px;
-      }
-    
-      .mentor-list {
-        display: grid;
-        gap: 10px;
-      }
-    
-      .mentor-item {
-        padding: 10px 14px;
-        border-left: 3px solid transparent;
-        border-radius: 8px;
-        transition: all 0.2s ease;
-      }
-    
-      .mentor-item:hover {
-        background: var(--soft);
-        border-left: 3px solid var(--accent);
-      }
-    
-      .mentor-name {
-        font-size: 0.96rem;
-        font-weight: 600;
-        color: var(--text);
-      }
-    
-      .mentor-name span {
-        font-weight: 400;
-        color: var(--muted);
-        margin-left: 6px;
-      }
-    
-      .mentor-desc {
-        font-size: 0.88rem;
-        color: #4b5563;
-        margin-top: 2px;
-      }
+    .mentor-map-section {
+      margin-top: 30px;
+    }
+
+    .mentor-title {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .mentor-map-note {
+      margin: 0 0 14px;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .mentor-map-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .world-map {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .world-map-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      background: #fafafa;
+    }
+
+    .map-pin {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .map-pin:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+      box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.18);
+    }
+
+    .pin-vancouver { top: 25.5%; left: 13.8%; }
+    .pin-urbana    { top: 33.5%; left: 23.7%; }
+    .pin-oxford    { top: 26.8%; left: 43.6%; }
+    .pin-edinburgh { top: 24.8%; left: 42.8%; }
+
+    .mentor-detail {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .mentor-detail h3 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+    }
+
+    .mentor-detail-entry + .mentor-detail-entry {
+      margin-top: 14px;
+    }
+
+    .mentor-detail-entry strong {
+      display: block;
+      font-size: 0.96rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .mentor-detail-entry p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: #4b5563;
+      line-height: 1.7;
+    }
 
     @media (max-width: 900px) {
       .hero {
@@ -462,7 +509,8 @@
 
       .pub-item,
       .news-item,
-      .trajectory-item {
+      .trajectory-item,
+      .training-item {
         grid-template-columns: 1fr;
       }
     }
@@ -519,54 +567,63 @@
         <div class="subtitle">Ph.D. student in Linguistics · University of Illinois Urbana-Champaign</div>
 
         <p class="intro">
-          Broadly speaking, I study how the linguistic and cognitive affordances provided by generative AI (Language models) shape and are shaped by
-          human-computer collaborative writing processes, in various genres and with respect to diverse populations. To do so, I am using both experimental and computational approaches. 
+          Broadly speaking, I study how the linguistic and cognitive affordances provided by generative AI
+          shape and are shaped by human-computer collaborative writing processes, across genres and across diverse populations.
+          To do so, I use both experimental and computational approaches.
         </p>
 
         <p class="intro">
-          Currently, I am investigating the conjoined effects of a 3D salience model and cognitive authorship on the reuse of newly introduced named entities
-          within human-computer interactive writing contexts/datasets.
+          Currently, I am investigating the conjoined effects of a 3D salience model and cognitive authorship
+          on the reuse of newly introduced named entities within human-computer interactive writing contexts.
         </p>
 
         <p class="intro">
-          My academic training is cross-disciplinary. I started in the field of second language writing, succeeded by an interesting detour into sociology and cultural anthropology in education,
-          before taking a quantitative turn and majoring in statistics. Nevetheless, questions of coherence (by extension, quatitative aesthetics) has remained as the core of my enduring
-          interests, rooted in linguistic theories but augmented by LLM opportunities. 
-
-        <div class="mentor-block">
-          <div class="mentor-title">
-             People whom I have studied with and have shaped my understanding of discourse coherence
-          </div>
-        
-          <div class="mentor-list">
-            <div class="mentor-item">
-              <div class="mentor-name">Maite Taboada <span>(SFU)</span></div>
-              <div class="mentor-desc">Rhetorical Structure Theory (RST) and discourse coherence annotation</div>
-            </div>
-        
-            <div class="mentor-item">
-              <div class="mentor-name">Nancy Hedberg <span>(SFU)</span></div>
-              <div class="mentor-desc">Cognitive status and referring expressions across languages</div>
-            </div>
-        
-            <div class="mentor-item">
-              <div class="mentor-name">Daniel Altshuler <span>(Oxford)</span></div>
-              <div class="mentor-desc">Segmented Discourse Representation Theory (SDRT) in literature</div>
-            </div>
-        
-            <div class="mentor-item">
-              <div class="mentor-name">Aleksandre Maskharashvili <span>(UIUC)</span></div>
-              <div class="mentor-desc">LLM-based discourse coherence research</div>
-            </div>
-        
-            <div class="mentor-item">
-              <div class="mentor-name">Hannah Rohde <span>(Edinburgh)</span></div>
-              <div class="mentor-desc">Broader perspectives on coherence and discourse processing</div>
-            </div>
-          </div>
-        </div>
+          My academic training is cross-disciplinary. I started in second language writing, took an important detour into
+          sociology and cultural anthropology in education, and later made a quantitative turn through statistics.
+          Nevertheless, questions of coherence and quantitative aesthetics have remained central to my interests,
+          grounded in linguistic theory and newly enriched by LLM-based opportunities.
         </p>
-        
+
+        <section class="mentor-map-section">
+          <div class="mentor-title">Mentors and intellectual influences</div>
+          <p class="mentor-map-note">Click a location on the map to see how each scholar has shaped my work on discourse and coherence.</p>
+
+          <div class="mentor-map-card">
+            <div class="world-map">
+              <img src="world-map.png" alt="World map showing mentors and intellectual influences" class="world-map-image" />
+
+              <button class="map-pin pin-vancouver" onclick="showMentor('vancouver')" aria-label="Show Vancouver mentors"></button>
+              <button class="map-pin pin-oxford" onclick="showMentor('oxford')" aria-label="Show Oxford mentor"></button>
+              <button class="map-pin pin-urbana" onclick="showMentor('urbana')" aria-label="Show Urbana-Champaign mentor"></button>
+              <button class="map-pin pin-edinburgh" onclick="showMentor('edinburgh')" aria-label="Show Edinburgh mentor"></button>
+            </div>
+
+            <div class="mentor-detail" id="mentor-detail">
+              <h3>Mentors and locations</h3>
+
+              <div class="mentor-detail-entry">
+                <strong>Vancouver, Canada</strong>
+                <p>Maite Taboada (SFU); Nancy Hedberg (SFU)</p>
+              </div>
+
+              <div class="mentor-detail-entry">
+                <strong>Oxford, United Kingdom</strong>
+                <p>Daniel Altshuler (Oxford)</p>
+              </div>
+
+              <div class="mentor-detail-entry">
+                <strong>Urbana-Champaign, United States</strong>
+                <p>Aleksandre Maskharashvili (UIUC)</p>
+              </div>
+
+              <div class="mentor-detail-entry">
+                <strong>Edinburgh, United Kingdom</strong>
+                <p>Hannah Rohde (Edinburgh)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div class="chips">
           <span class="chip">Computational Linguistics</span>
           <span class="chip">Discourse &amp; Coherence</span>
@@ -580,20 +637,18 @@
           <div class="research-list">
             <div class="research-item">
               <h3>Computational discourse coherence</h3>
-              <p>Modeling discourse organization/topic development/information flow in writing via entity-based and discourse relations based approaches.</p>
+              <p>Modeling discourse organization, topic development, and information flow in writing through entity-based and discourse-relation-based approaches.</p>
             </div>
 
-          <div class="research-item">
+            <div class="research-item">
               <h3>Human-computer interaction for writing</h3>
               <p>Exploring how people think, write, and learn with AI systems and language technologies.</p>
             </div>
-           
+
             <div class="research-item">
               <h3>Writing assessment and educational NLP</h3>
               <p>Studying how computational methods and AI tools can support evaluation, feedback, and writer development.</p>
             </div>
-
-
           </div>
         </section>
 
@@ -643,29 +698,27 @@
 
           <div class="additional-training">
             <h3 class="additional-training-title">Additional Training</h3>
-          
+
             <div class="training-list">
               <div class="training-item">
                 <img src="sig-writing-school.jpg" alt="SIG Writing Research School logo" class="training-logo" />
                 <div>
                   <h3>SIG Writing Research School</h3>
-                  <div class="meta">Zürich, Switzerland · 2026 </div>
+                  <div class="meta">Zürich, Switzerland · 2026</div>
                   <p>
-                    Keystroke logging with Inputlog, analysis and visualization of
-                    keystroke data, fluency measurement, handwriting analysis with CSWin,
-                    screen-recording methods, and writing with AI from process and product perspectives.
+                    Keystroke logging with Inputlog, analysis and visualization of keystroke data,
+                    fluency measurement, handwriting analysis with CSWin, screen-recording methods,
+                    and writing with AI from process and product perspectives.
                   </p>
                 </div>
               </div>
-          
+
               <div class="training-item">
                 <img src="lsa-institute.jpg" alt="LSA Linguistic Institute logo" class="training-logo" />
                 <div>
                   <h3>LSA Linguistic Institute</h3>
                   <div class="meta">2024</div>
-                  <p>
-                    Discourse semantics and discourse pragmatics.
-                  </p>
+                  <p>Discourse semantics and discourse pragmatics.</p>
                 </div>
               </div>
             </div>
@@ -772,5 +825,48 @@
       </div>
     </section>
   </main>
+
+  <script>
+    function showMentor(location) {
+      const detail = document.getElementById("mentor-detail");
+
+      const content = {
+        vancouver: `
+          <h3>Vancouver, Canada</h3>
+          <div class="mentor-detail-entry">
+            <strong>Maite Taboada (SFU)</strong>
+            <p>Rhetorical Structure Theory (RST) and discourse coherence annotation.</p>
+          </div>
+          <div class="mentor-detail-entry">
+            <strong>Nancy Hedberg (SFU)</strong>
+            <p>Cognitive status and referring expressions across languages.</p>
+          </div>
+        `,
+        oxford: `
+          <h3>Oxford, United Kingdom</h3>
+          <div class="mentor-detail-entry">
+            <strong>Daniel Altshuler (Oxford)</strong>
+            <p>Segmented Discourse Representation Theory (SDRT), especially for discourse structure and interpretation.</p>
+          </div>
+        `,
+        urbana: `
+          <h3>Urbana-Champaign, United States</h3>
+          <div class="mentor-detail-entry">
+            <strong>Aleksandre Maskharashvili (UIUC)</strong>
+            <p>LLM-based approaches to discourse coherence and computational writing research.</p>
+          </div>
+        `,
+        edinburgh: `
+          <h3>Edinburgh, United Kingdom</h3>
+          <div class="mentor-detail-entry">
+            <strong>Hannah Rohde (Edinburgh)</strong>
+            <p>Broader perspectives on coherence and discourse processing.</p>
+          </div>
+        `
+      };
+
+      detail.innerHTML = content[location];
+    }
+  </script>
 </body>
 </html>
